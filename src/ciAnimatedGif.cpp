@@ -118,3 +118,11 @@ void ciAnimatedGif::draw()
     gl::draw(mCurTex);
     
 }
+
+void ciAnimatedGif::draw(size_t x1, size_t y1, size_t x2, size_t y2)
+{
+    update();
+
+    gl::draw(mCurTex, Rectf(x1, y1, x2, y2));
+
+}

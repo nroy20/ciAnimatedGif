@@ -17,6 +17,7 @@ class ciAnimatedGif {
     
     void update();
     void draw();
+    void draw(size_t x1, size_t y1, size_t x2, size_t y2);
     void play();
     void seek( float pct );
     
